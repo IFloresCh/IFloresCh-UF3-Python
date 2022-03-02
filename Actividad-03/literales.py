@@ -1,4 +1,4 @@
-MENU = '1. Crear un fichero\n2. Mostrar el contenido de un fichero\n3. Modificar el contenido de un fichero\n'
+MENU = '1. Crear un fichero\n2. Mostrar el contenido de un fichero\n3. Modificar el contenido de un fichero\n0. Salir\n'
 FILE_NAME = 'Introduce el nombre del fichero: '
 FILE_DIRECTORY = 'files/'
 ADD_TO_FILE = 'Ingrese una frase: '
