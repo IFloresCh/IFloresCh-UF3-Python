@@ -1,5 +1,13 @@
 import literales as l
 import csv
+def menu_principal(menu):
+    match menu:
+        case 1:
+            datos()
+        case 2:
+            imprimir()
+
+
 
 def tecnologia():
     menu = int(input(l.TECH))
@@ -32,4 +40,4 @@ def imprimir():
     with open('files/alumnos.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=';')
         for row in readCSV:
-            print(f'\t Estudiant:{row[0]}, {row[1]} {row[2]}, a la matèria {row[3]} ha obtingut un {row[4]}.')
+            print(', '.join(row))
