@@ -34,4 +34,5 @@ def total_factura():
     else:
         print(l.PRINT2, + total)
         csv_file.close()
+
     
