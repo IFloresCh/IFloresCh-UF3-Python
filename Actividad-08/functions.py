@@ -11,7 +11,7 @@ def menu_principal(menu):
 def total_projects():
     try:
         with open(l.FILE_DIR) as csvfile:
-            readCSV = csv.reader(csvfile, delimiter=';')
+            readCSV = csv.reader(csvfile, delimiter=',')
             row_count = sum(1 for row in readCSV)
     except:
         print(l.ERROR)
