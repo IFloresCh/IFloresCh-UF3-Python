@@ -1,0 +1,11 @@
+﻿codi_proj,nom_proj,codi_client,codi_resp,preu,data_inici,data_fi
+PR102,Màrketing a RRSS,CR105,BC,50000,15/01/2012,15/02/2020
+PR103,Optimització BBDD,CR045,SD,12500,02/01/2020,15/04/2020
+PR104,Microsite,CR023,CG,125000,15/02/2020,31/03/2020
+PR105,Auditoria de seguretat,CR110,KA,69000,01/02/2020,28/02/2020
+PR106,Gestió de reserves,CR045,MP,375000,04/03/2020,07/06/2020
+PR107,Disseny web responsiu,CR203,JM,36000,01/05/2020,20/05/2020
+PR108,Instal·lació de xarxa,CR065,MB,23000,20/03/2020,30/03/2020
+PR109,Desenvolupament CMS,CR010,RE,125000,08/04/2020,15/08/2020
+PR110,Auditoria de seguretat,CR070,LD,75000,01/07/2020,15/07/2020
+PR111,Anàlisi de dades i estadística,CR147,SS,215000,01/06/2020,31/08/2020
