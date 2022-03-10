@@ -1,2 +1,5 @@
-MENU = '\n\n1. Cuantos Proyectos tiene el proyecto\n2. Total de facturacion\n0. Salir\n'
+MENU = '\n\n1. Cuantos Proyectos tiene el documento\n2. Total de facturacion\n0. Salir\n'
 FILE_DIR = 'files/projects_board.csv'
+PRINT = '\nEl Numero total de proyectos es: '
+PRINT2 = '\nEl total de facturacion es: '
+ERROR = 'No se ha encontrado el archivo'

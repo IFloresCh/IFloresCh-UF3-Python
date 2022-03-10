@@ -1,13 +1,12 @@
 import literales as l
 import functions as f
+import csv
 def main():
-    menu=input(l.MENU)
+    menu = int(input(l.MENU))
+    f.menu_principal(menu)
     while menu != 0:
-        match menu:
-            case 1:
-                f.total_projects()
-            case 2:
-                f.total_factura()
+        menu = int(input(l.MENU))
+        f.menu_principal(menu)       
     
 if __name__ == "__main__" :
     main()
