@@ -1,0 +1,6 @@
+MENU = '\n1. Mostrar las reservas del dia\n2. Exportar los datos BBDD a CSV\n3. Mostrar datos del fichero CSV\n4. Mostrar Beneficios del dia\n5. Registrar nuevo cliente\n6. Registrar nueva reserva\n0. Salir\n'
+ID = 'Introduce el numerador(numerico): '
+SINGER = 'Introduce el grupo/cantante: '
+SONG = 'Introduce el nombre de la cancion: '
+DATE = 'Introduce la fecha de publicacion(YYYY-MM--DD): '
+VISUAL = 'Introduce el numero de visualizaciones: '
