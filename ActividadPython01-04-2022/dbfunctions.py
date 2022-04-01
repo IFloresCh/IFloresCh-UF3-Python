@@ -64,3 +64,26 @@ def select_data():
             print(err)
     else:
         cnx.close()
+        
+def select_day():
+    try:
+        # obrim connexió a la bbdd amb els paràmetres de connection_args
+        cnx = mysql.connector.connect(**connection_args)
+        # definim la sentència sql per a crear la bbdd
+        sql = ("SELECT * FROM reserves WHERE date = curdate()")
+        # creem el cursor, executem la sentència i fem fetchall (per obtenir tots els registres)
+        crs = cnx.cursor()
+        crs.execute(sql)
+        result = crs.fetchall()
+        # mostra tots els resultats
+        for x in result:
+            print(x)
+    except mysql.connector.Error as err:
+        if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
+            print("Usuari o contrassenya incorrectes")
+        elif err.errno == errorcode.ER_BAD_DB_ERROR:
+            print("La base de dades indicada no existeix")
+        else:
+            print(err)
+    else:
+        cnx.close()
