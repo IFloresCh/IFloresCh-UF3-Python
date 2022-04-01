@@ -23,29 +23,40 @@ create table historial (
     preu decimal(8,2),
     FOREIGN KEY (nif) REFERENCES client(nif)
     );
+    
+create table servei(
+    id INT primary key,
+    nom varchar(30),
+    detall varchar(120),
+    preu decimal(8,2)
     );
+
 
 create table reserves (
     nif varchar(9) primary key,
     data date,
     hora time,
     motiu varchar(140),
-    datares bigint,
-    FOREIGN KEY (nif) REFERENCES client(nif)
+    id_servei INT,
+    FOREIGN KEY (nif) REFERENCES client(nif),
+    FOREIGN KEY (id_servei) REFERENCES servei(id)
     );
+
+
+create table provincia (
+    id varchar(2),
+    nom varchar(50),
     );
 
 create table poblacio (
     idpro varchar(2),
     id varchar(3),
     control varchar(1),
-    nom varchar(50)
+    nom varchar(50),
+    FOREIGN KEY (idpro) REFERENCES provincia(id)
     );
 
-create table provincia (
-    id varchar(2),
-    nom varchar(50),
-    );
+
 
 create table detall(
     id bigint primary key,
@@ -53,15 +64,10 @@ create table detall(
     servei INT
     );
 
+-- dias festivos que no se pueden reservar
 create table festius (
     data_in date,
     data_fi date,
     descripcio varchar(60)
     );
 
-create table servei(
-    id INT primary key,
-    nom varchar(30),
-    detall varchar(120),
-    preu decimal(8,2)
-    );

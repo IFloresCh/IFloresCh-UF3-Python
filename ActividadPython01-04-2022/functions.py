@@ -1,3 +1,4 @@
+import email
 import string
 import literales as l
 import dbfunctions as db
@@ -6,48 +7,68 @@ import pandas as pd
 
 def menu_principal(menu):
     if menu == 1:
-        print("has escogido 1")
+        db.select_day()
     elif menu == 2:
         print("Has escogido 2")
     elif menu == 3:
         print("Has escogido 3")
     elif menu == 4:
-        print("Has escogido 4")
+        print("Has escogido 4")    
+    elif menu == 5:
+        create_user()
+    elif menu == 6:
+        create_reserve()
         
 
-def create_dict(n):
-    # crear la funcion header
-    write_header()
+def create_user():
+    # crea un diccionario para cada usuario
+
+    nif = input(l.NIF)
+    nom = input(l.NAME)
+    cognom1 = input(l.COGNOM1)
+    cognom2 = int(input(l.COGNOM2))
+    address = input(l.ADDRESS)
+    provincia = input(l.PROVINCE)
+    poblacio = input(l.POBLACION)
+    telefon = int(input(l.TELEFON))
+    email = input(l.EMAIL)
+    datanaixement = input(l.DATANAIXEMENT)
+    
+    
+
+    user = {
+        "nif": nif,
+        "nom": nom,
+        "cognom1": cognom1,
+        "cognom2": cognom2,
+        "address": address,
+        "provincia": provincia,
+        "poblacio": poblacio,
+        "telefon": telefon,
+        "email": email,
+        "datanaixement": datanaixement
+ }
+    return user
+
+def create_reserve():
     # crea un diccionario para cada reserva
-    for i in range(n):
-        singer = input(l.SINGER)
-        song = input(l.SONG)
-        date = input(l.DATE)
-        visual = int(input(l.VISUAL))
-
-        student = {
-            "singer": singer,
-            "song": song,
-            "date": date,
-            "visual": visual
-        }
-        write_CSV(student)
-
-
-def multiply_by_2(n):
-    # multiplica el valor de n per 2
-    return n * 2
-
     
-    
-    
-    
-    
+    nif = input(l.NIF)
+    motiu = input(l.MOTIVO)
+    servei = int(input(l.SERVICIO))
 
 
+    reserva = {
+        "nif": nif,
+        "motiu": motiu,
+        "servei": servei
         
-    
-        
+ }
+    return reserva
+
+
+
+
 
 
 def read_CSV():
