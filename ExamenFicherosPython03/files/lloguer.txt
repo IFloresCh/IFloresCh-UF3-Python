@@ -1,0 +1,21 @@
+Àmbit territorial,Codi territorial,Nom territori,Any,Període,Habitatges,Renda,Tram de preus
+Municipi,08001,Abrera,2021,gener-desembre,160,667.43,> 600 euros/mes
+Municipi,25002,Àger,2021,gener-desembre,1,,<= 350 euros/mes
+Municipi,25003,Agramunt,2021,gener-desembre,122,333.45,<= 350 euros/mes
+Municipi,08002,Aguilar de Segarra,2021,gener-desembre,3,,> 600 euros/mes
+Municipi,17001,Agullana,2021,gener-desembre,22,490.90,> 450 i <= 600 euros/mes
+Municipi,08014,Aiguafreda,2021,gener-desembre,54,594.24,> 450 i <= 600 euros/mes
+Municipi,43001,Aiguamúrcia,2021,gener-desembre,10,464.00,> 450 i <= 600 euros/mes
+Municipi,17002,Aiguaviva,2021,gener-desembre,2,,> 600 euros/mes
+Municipi,25038,Aitona,2021,gener-desembre,39,377.05,> 350 i <= 450 euros/mes
+Municipi,25004,"Alamús, els",2021,gener-desembre,3,,> 450 i <= 600 euros/mes
+Municipi,25005,Alàs i Cerc,2021,gener-desembre,1,,<= 350 euros/mes
+Municipi,25006,"Albagés, l'",2021,gener-desembre,1,,> 450 i <= 600 euros/mes
+Municipi,25007,Albatàrrec,2021,gener-desembre,19,375.67,> 350 i <= 450 euros/mes
+Municipi,25008,Albesa,2021,gener-desembre,7,353.57,> 350 i <= 450 euros/mes
+Municipi,25009,"Albi, l'",2021,gener-desembre,2,,<= 350 euros/mes
+Municipi,43002,Albinyana,2021,gener-desembre,21,542.06,> 450 i <= 600 euros/mes
+Municipi,17004,Albons,2021,gener-desembre,6,615.83,> 600 euros/mes
+Municipi,43004,Alcanar,2021,gener-desembre,116,396.43,> 350 i <= 450 euros/mes
+Municipi,25010,Alcanó,2021,gener-desembre,2,,> 350 i <= 450 euros/mes
+Municipi,25011,Alcarràs,2021,gener-desembre,152,406.39,> 350 i <= 450 euros/mes
